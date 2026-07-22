@@ -1,0 +1,59 @@
+* {
+  font-family: "SF Pro";
+  border-color: transparent;
+  outline-style: none;
+}
+
+window {
+  background: #1b1928;
+  color: #bcb5c8;
+}
+
+#outer-box {
+  background: transparent;
+  padding: 0.5rem;
+}
+
+#input {
+  border-radius: 1rem;
+  border-color: transparent;
+  background: #31293b;
+  color: #bcb5c8;
+  font-size: 16pt;
+  padding: 0.5rem;
+  outline: none;
+}
+
+#input:focus {
+  border-color: transparent;
+}
+
+#selected {
+  background: #a49bb1;
+  color: #1b1928;
+  border-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+#entry:nth-child(even) {
+  background: #211e30;
+}
+
+#text {
+  padding: 0.75rem;
+  font-size: 13pt;
+}
+
+#inner-box {
+  background: transparent;
+}
+
+#entry {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-color: transparent;
+}

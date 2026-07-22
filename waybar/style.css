@@ -1,0 +1,91 @@
+* {
+  font-family: "SF Pro";
+  font-size: 12pt;
+  color: white;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
+}
+
+window#waybar {
+  background: #1b1928;
+  opacity: 0.85;
+}
+
+#memory,
+#disk,
+#pulseaudio,
+#cpu {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#window {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+#tray {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+#tray menu {
+  background: #31293b;
+  border: 1px solid #a49bb1;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#tray menu * {
+  background: #31293b;
+  color: #bcb5c8;
+}
+
+#custom-nowplaying {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-style: italic;
+}
+
+#custom-kb_layout {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+}
+
+#custom-audio_output {
+  padding-left: 0.5rem;
+  padding-right: 0.3rem;
+  font-weight: bold;
+}
+
+#custom-power {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  color: #cbe3e7;
+}
+
+#custom-weather {
+  padding-left: 2rem;
+  font-weight: bold;
+}
+
+#workspaces {
+  background: #31293b;
+  color: #bcb5c8;
+  font-weight: bold;
+  border-radius: 0 1rem 1rem 0;
+}
+#workspaces button {
+  background: transparent;
+}
+
+#workspaces button.focused {
+  background: #a49bb1;
+  color: #1b1928;
+  border-radius: 1rem;
+}

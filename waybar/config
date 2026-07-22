@@ -1,0 +1,80 @@
+{
+    "layer": "top",
+    "output": ["DP-1", "HDMI-A-1"],
+    "modules-left": ["sway/workspaces", "sway/mode", "custom/nowplaying", "sway/window"],
+    "modules-center": ["clock", "custom/weather"],
+    "modules-right": ["tray", "custom/kb_layout", "custom/audio_output", "pulseaudio", "memory", "cpu", "custom/power"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format": "{:%a, %d. %b  %H:%M}",
+        "tooltip": false,
+    },
+    "memory": {
+        "interval": 30,
+        "format": "{used:0.1f}G/{total:0.1f}G "
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "custom/audio_output": {
+        "exec": "/home/hypertop/.config/waybar/scripts/audio_output.sh",
+        "on-scroll-up": "/home/hypertop/.config/waybar/scripts/audio_output.sh next",
+        "on-scroll-down": "/home/hypertop/.config/waybar/scripts/audio_output.sh prev",
+        "on-click": "pavucontrol",
+        "on-click-right": "/home/hypertop/.config/waybar/scripts/audio_output.sh list",
+        "interval": 1,
+        "format": "{} ",
+        "tooltip": false
+    },
+    "custom/kb_layout": {
+        "exec": "/home/hypertop/.config/waybar/scripts/kb_layout.sh",
+        "interval": 1,
+        "format": "{} ",
+        "tooltip": false
+    },
+    "custom/power": {
+        "exec": "/home/hypertop/.config/waybar/scripts/power.sh",
+        "on-click": "/home/hypertop/.config/waybar/scripts/power.sh menu",
+        "interval": 86400,
+        "format": "{}",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    },
+    "custom/nowplaying": {
+        "exec": "/home/hypertop/.config/waybar/scripts/nowplaying.sh",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "interval": 5,
+        "format": "{} ",
+        "tooltip": false
+    },
+    "custom/weather": {
+        "tooltip": false,
+        "exec": "curl 'https://wttr.in/Nizhnekamsk?format=1'",
+        "interval": 800
+    }
+}
