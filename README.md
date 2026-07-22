@@ -8,7 +8,7 @@
 
 ### Зависимости
 ```
-sudo pacman -S swayfx-git waybar wofi kitty alacritty polkit-gnome playerctl
+sudo pacman -S sway swayfx-git waybar wofi kitty alacritty polkit-gnome playerctl
 yay -S otf-apple-sf-pro otf-apple-sf-mono
 ```
 
