@@ -1,7 +1,6 @@
 # SwayFX Dots
 
-## Тема
-Тёмная фиолетовая тема под wallpaper.jpg.
+![Скриншот](screenshot.png)
 
 ## Установка
 
