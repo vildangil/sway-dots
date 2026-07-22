@@ -1,4 +1,4 @@
-# SwayFX Dots
+# VildanG's Miku Sway dotfiles
 
 ![Скриншот](screenshot.png)
 
