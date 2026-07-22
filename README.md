@@ -1,3 +1,5 @@
+[English](README.en.md) | [Русский](README.md)
+
 # VildanG's Miku Sway dotfiles
 
 ![Скриншот](screenshot.png)
