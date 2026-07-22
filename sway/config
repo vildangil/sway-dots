@@ -50,6 +50,7 @@ workspace 2 output HDMI-A-1
 workspace 3 output DP-1
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec tg-ws-proxy
 exec 'sleep 3; swaymsg workspace 1'
 
 # Input
@@ -138,6 +139,6 @@ mode "resize" {
 }
 bindsym --to-code $mod+Shift+r mode "resize"
 
-exec_always waybar
+exec_always /home/hypertop/.config/sway/scripts/waybar.sh
 
 include /etc/sway/config.d/*
